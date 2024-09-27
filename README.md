@@ -16,4 +16,4 @@ yarn install
 
 ## 项目分支
 
-除main分支外，每个分支的README.md文件中会有对应的BUG描述，互不关联，方便通过运行最少依赖的demo项目，方便提交issue反馈bug。
+除main分支外，每个分支的README.md文件中会有对应的BUG描述，互不关联，方便提交issue反馈bug时以最精简的demo项目复现问题。
