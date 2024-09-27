@@ -8,10 +8,13 @@
 </template>
 
 <script>
+import iconv from 'iconv-lite';
+
 export default {
   data() {
     return {
       title: 'Hello',
+      data: iconv.encode('你好', 'gbk')
     }
   },
   onLoad() {},

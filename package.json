@@ -52,6 +52,7 @@
     "@dcloudio/uni-mp-jd": "3.0.0-4020820240925001",
     "@dcloudio/uni-mp-kuaishou": "3.0.0-4020820240925001",
     "@dcloudio/uni-mp-lark": "3.0.0-4020820240925001",
+    "@dcloudio/vite-plugin-uni": "3.0.0-4020820240925001",
     "@dcloudio/uni-mp-qq": "3.0.0-4020820240925001",
     "@dcloudio/uni-mp-toutiao": "3.0.0-4020820240925001",
     "@dcloudio/uni-mp-weixin": "3.0.0-4020820240925001",
@@ -67,6 +68,7 @@
     "@dcloudio/uni-stacktracey": "3.0.0-4020820240925001",
     "@dcloudio/vite-plugin-uni": "3.0.0-4020820240925001",
     "@vue/runtime-core": "^3.4.21",
+    "iconv-lite": "^0.6.3",
     "vite": "5.2.8"
   }
 }
