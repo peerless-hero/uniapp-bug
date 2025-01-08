@@ -2,11 +2,9 @@
 
 本项目用于演示个人发现到的uniapp相关的bug。
 
-## 项目来源
+## 蓝牙模块相关bug
 
-项目源码基础来源于官方提供的脚手架项目。
-
-地址：[https://zh.uniapp.dcloud.io/quickstart-cli.html#%E5%88%9B%E5%BB%BAuni-app](https://zh.uniapp.dcloud.io/quickstart-cli.html#%E5%88%9B%E5%BB%BAuni-app)
+本BUG产生在APP的iOS端，具体表现为无法正确获取蓝牙授权状态和蓝牙开关状态。
 
 ## 项目安装
 
@@ -14,6 +12,10 @@
 yarn install
 ```
 
-## 项目分支
+## 复现步骤
 
-除main分支外，每个分支的README.md文件中会有对应的BUG描述，互不关联，方便提交issue反馈bug时以最精简的demo项目复现问题。
+1. 项目安装依赖后，在iOS端运行。
+2. 点击`初始化蓝牙（openBluetoothAdapter）`按钮，触发蓝牙授权，单击允许。
+3. 点击`获取设备设置（getSystemSetting）`按钮和`获取 APP 授权设置（getAppAuthorizeSetting）`按钮，观察相关结果，可以看出确实是已授权。蓝牙开关为开启状态。
+4. 退出APP回到桌面，并清除APP的后台运行。
+5. 不做任何其他操作，在此打开APP，直接点击`获取设备设置（getSystemSetting）`按钮和`获取 APP 授权设置（getAppAuthorizeSetting）`按钮，观察相关结果，发现蓝牙开关状态为`false`，且蓝牙授权状态为`not determined`。
