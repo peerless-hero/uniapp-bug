@@ -2,11 +2,9 @@
 
 本项目用于演示个人发现到的uniapp相关的bug。
 
-## 项目来源
+## 上传相关BUG
 
-项目源码基础来源于官方提供的脚手架项目。
-
-地址：[https://zh.uniapp.dcloud.io/quickstart-cli.html#%E5%88%9B%E5%BB%BAuni-app](https://zh.uniapp.dcloud.io/quickstart-cli.html#%E5%88%9B%E5%BB%BAuni-app)
+上传超时无效
 
 ## 项目安装
 
@@ -14,6 +12,14 @@
 yarn install
 ```
 
-## 项目分支
+## 复现步骤
 
-除main分支外，每个分支的README.md文件中会有对应的BUG描述，互不关联，方便提交issue反馈bug时以最精简的demo项目复现问题。
+1.使用项目内提供的服务器url，或者自行配置服务器url，模拟较大延迟的服务器地址。
+
+2.使用APP启动项目，点击上传按钮，上传文件。
+
+3.观察控制台，发现上传2秒后，没有任何与超时有关的错误信息。
+
+## 预期结果
+
+2秒上传超时后，有相关的错误回调。
