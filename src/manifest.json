@@ -1,7 +1,7 @@
 {
-    "name" : "",
+    "name" : "darkmode-bug",
     "appid" : "",
-    "description" : "",
+    "description" : "暗黑模式bug演示项目",
     "versionName" : "1.0.0",
     "versionCode" : "100",
     "transformPx" : false,
@@ -67,6 +67,17 @@
     },
     "uniStatistics": {  
         "enable": false
+    },
+    "app-harmony" : {
+        "darkmode" : true,
+        "distribute" : {
+            "bundleName" : "",
+            "signingConfigs" : {}
+        },
+        "safearea" : {
+            "background" : "#ffffff",
+            "backgroundDark" : "#292929"
+        }
     },
     "vueVersion" : "3"
 }

@@ -1,4 +1,4 @@
-# uniapp-bug
+# darkmode-bug
 
 本项目用于演示个人发现到的uniapp相关的bug。
 
@@ -14,6 +14,10 @@
 yarn install
 ```
 
-## 项目分支
+自行申请调试证书，修改src/manifest.json内"app-harmony"的相关鸿蒙配置。
 
-除main分支外，每个分支的README.md文件中会有对应的BUG描述，互不关联，方便提交issue反馈bug时以最精简的demo项目复现问题。
+## bug描述
+
+使用HBuildX5.04正式版启动本项目，深色模式样式失效，且无法监听主题切换。
+
+将HBuildX回退到4.87版本，深色模式一切正常。
