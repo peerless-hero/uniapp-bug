@@ -21,6 +21,10 @@ yarn install
 yarn run build:mp-weixin
 ```
 
+## 错误截图
+
+![错误截图](src/static/screenshot.png)
+
 ## 额外说明
 
 回退uniapp相关依赖的版本值至3.0.0-4080720251210001可暂时解决此问题。
