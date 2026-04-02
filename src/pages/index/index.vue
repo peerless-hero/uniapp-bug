@@ -1,22 +1,17 @@
 <template>
   <view class="content">
     <image class="logo" src="/static/logo.png"></image>
-    <view class="text-area">
-      <text class="title">{{ title }}</text>
-    </view>
+    <some-component v-bind="data" />
   </view>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      title: 'Hello',
-    }
-  },
-  onLoad() {},
-  methods: {},
-}
+<script setup>
+import SomeComponent from '@/components/SomeComponent.vue'
+
+const data = reactive({
+  // prop属性
+  title: 'Hello',
+})
 </script>
 
 <style>
@@ -34,11 +29,6 @@ export default {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50rpx;
-}
-
-.text-area {
-  display: flex;
-  justify-content: center;
 }
 
 .title {

@@ -1,6 +1,6 @@
-# uniapp-bug
+# mp-weixin-bind-bug
 
-本项目用于演示个人发现到的uniapp相关的bug。
+编译到微信平台时无法识别v-bind指令。
 
 ## 项目来源
 
@@ -14,6 +14,13 @@
 yarn install
 ```
 
-## 项目分支
+## 操作步骤
 
-除main分支外，每个分支的README.md文件中会有对应的BUG描述，互不关联，方便提交issue反馈bug时以最精简的demo项目复现问题。
+运行编译到微信平台的编译指令。
+```bash
+yarn run build:mp-weixin
+```
+
+## 额外说明
+
+回退uniapp相关依赖的版本值至3.0.0-4080720251210001可暂时解决此问题。
